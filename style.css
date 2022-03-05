@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(0, 0%, 100%);
+  width: 375px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 10px 5px 30px 30px hsl(217, 89%, 7%);
+}
+
+.hero {
+  width: 100%;
+  height: 325px;
+  border-radius: 15px;
+  background: url("./images/image-equilibrium.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero:hover {
+  display: block;
+  background: url("./images/icon-view.svg"), linear-gradient(hsla(178, 100%, 50%, 0.4), hsla(178, 100%, 50%, 0.4)), url("./images/image-equilibrium.jpg");
+  background-size: 60px, cover, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.information {
+  color: hsl(215, 51%, 70%);
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+  margin-bottom: 20px;
+}
+
+.information .title {
+  margin: 20px 0;
+  color: white;
+  font-weight: 600;
+}
+
+.information .title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.information .description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.price-duration {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.price-duration img {
+  margin-right: 7px;
+  height: 25px;
+}
+
+.price-duration p {
+  align-items: center;
+}
+
+.price-duration .price {
+  display: flex;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.price-duration .duration {
+  display: flex;
+}
+
+.creator {
+  display: flex;
+  gap: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+.creator img {
+  width: 30px;
+  border: 2px solid hsl(215, 51%, 70%);
+  border-radius: 50%;
+}
+.creator p {
+  font-weight: 300;
+  margin: auto 0;
+}
+
+.creator p span {
+  color: white;
+  font-weight: 400;
+}
+
+.creator p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(178, 100%, 50%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
